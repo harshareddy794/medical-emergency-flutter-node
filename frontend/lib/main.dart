@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medicare/bottom_nav.dart';
-import 'routes.dart';
+import 'package:medicare/pages/doctor%20side/medicine_details.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,11 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      home: BottomNav(),
       debugShowCheckedModeBanner: false,
-      //initialRoute: Dashboard.dashboardId,
-      routes: routes,
+      home: MedicineDetailsDoctor(),
     );
   }
 }
